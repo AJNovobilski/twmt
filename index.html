@@ -1,0 +1,200 @@
+<link href="dist/tailwind.css" rel="stylesheet">
+<script src = "jquery/jquery.min.js"></script>
+<script src = "./scripts/nav.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+<body>
+
+<!-- Nav -->
+
+
+
+
+
+<div id="mySidenav" class="sidenav opacity-70	">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<nav class="nav bg-gray-300 ">
+  <div class="container mx-auto">
+    <div class="flex space-x-4 ">
+      <div class="flex-1 justify-self-auto"><img style="width: 5.8rem;" src="./media/misc/family-marketing-mobile-nav2.png"class="justify-self-auto" onclick="openNav()"></div>
+      <div class="flex-1 align-middle"><img src="./media/sitelogos/logo+family+marketing.png"class="absolute-center p-9"></div>
+      <div class="flex-1 align-middle m-7 pr-2">
+        
+        <div class="language float-right align-middle">
+         
+        <select id="select">
+             <option id="english" value="english">English</option>
+            <option id="spanish" value="spanish">Spanish</option>
+            <option id="portuguese" value="portuguese">Portuguese</option>
+        </select>
+        </div>
+  </div>
+    </div>
+   
+  </div>
+
+  </nav>
+  <!-- End Nav -->
+
+
+
+
+  <div class="container mx-auto ">
+
+    
+    <div class="navigation ">
+
+
+      
+      <ul class=" border-4 border-light-blue-500 border-opacity-100 sticky top-0 bg-white">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+      </ul>
+
+    <div class="container mx-auto">
+
+    <div class="box-border h-32 w-32 p-4 border-4 mr-auto ml-auto">
+      <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="index.html" title="Home">
+        <img src="./media/misc/breadcrumbs-preloader.gif" class="z-2 dib h4 br-100" alt="Andrew Novobilski Portfolio">
+      </a>    </div>
+    </div>
+    
+    <div class="footer">
+        <p class="english">Hosted by <a href="#">Michigan Publishing</a>, a division of the <a href="#">University of Michigan Library</a>.</p>
+        <p class="english">For more information please contact <a href="#">mpub-help@umich.edu</a>.</p>
+        <p class="spanish">Conducido por <a href="#">Michigan Publishing</a>, una división de <a href="#">la Universidad de Michigan Library</a>.</p>
+    <p class="spanish">Para obtener más información, póngase en contacto con <a href="#">mpub-help@umich.edu</a>.</p>
+    </div>
+
+
+    <div class="footer">
+      <p class="english">Hosted by <a href="#">Michigan Publishing</a>, a division of the <a href="#">University of Michigan Library</a>.</p>
+      <p class="english">For more information please contact <a href="#">mpub-help@umich.edu</a>.</p>
+      <p class="spanish">Conducido por <a href="#">Michigan Publishing</a>, una división de <a href="#">la Universidad de Michigan Library</a>.</p>
+  <p class="spanish">Para obtener más información, póngase en contacto con <a href="#">mpub-help@umich.edu</a>.</p>
+  </div>
+
+
+  <div class="footer">
+    <p class="english">Hosted by <a href="#">Michigan Publishing</a>, a division of the <a href="#">University of Michigan Library</a>.</p>
+    <p class="english">For more information please contact <a href="#">mpub-help@umich.edu</a>.</p>
+    <p class="spanish">Conducido por <a href="#">Michigan Publishing</a>, una división de <a href="#">la Universidad de Michigan Library</a>.</p>
+<p class="spanish">Para obtener más información, póngase en contacto con <a href="#">mpub-help@umich.edu</a>.</p>
+</div>
+
+
+<div class="footer">
+  <p class="english">Hosted by <a href="#">Michigan Publishing</a>, a division of the <a href="#">University of Michigan Library</a>.</p>
+  <p class="english">For more information please contact <a href="#">mpub-help@umich.edu</a>.</p>
+  <p class="spanish">Conducido por <a href="#">Michigan Publishing</a>, una división de <a href="#">la Universidad de Michigan Library</a>.</p>
+<p class="spanish">Para obtener más información, póngase en contacto con <a href="#">mpub-help@umich.edu</a>.</p>
+</div>
+
+<div class="footer">
+  <p class="english">Hosted by <a href="#">Michigan Publishing</a>, a division of the <a href="#">University of Michigan Library</a>.</p>
+  <p class="english">For more information please contact <a href="#">mpub-help@umich.edu</a>.</p>
+  <p class="spanish">Conducido por <a href="#">Michigan Publishing</a>, una división de <a href="#">la Universidad de Michigan Library</a>.</p>
+<p class="spanish">Para obtener más información, póngase en contacto con <a href="#">mpub-help@umich.edu</a>.</p>
+</div>
+
+    
+    </body>
+</html>
+
+<script>
+
+var languageSelect = document.getElementById('LanguageSelect');
+   var selectedLanguage = readCookie('language');
+	
+	if ((selectedLanguage == 'english') || (selectedLanguage == 'spanish') || (selectedLanguage == 'portuguese')) {
+	$(".language select").val(selectedLanguage);
+	var sel = $(".language select").val(selectedLanguage);
+	if (selectedLanguage == 'english') {
+           $(".english").css("display", "inline");
+           $(".spanish").css("display", "none"); 
+           $(".portuguese").css("display", "none"); 
+        }else if (selectedLanguage =='spanish') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "inline");
+           $(".portuguese").css("display", "none");
+        }else if (selectedLanguage =='portuguese') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "none");
+           $(".portuguese").css("display", "inline");
+        }
+    }
+
+	$(".language select").bind('change', function() {
+		//on change set cookie and...
+		setCookie('language', this.value, 365);
+		
+		//change css depending on what is selected
+        var sel = $(".language select").val();
+        if (sel=='english') {
+           $(".english").css("display", "inline");
+           $(".spanish").css("display", "none");
+           $(".portuguese").css("display", "none");
+        }else if (sel=='spanish') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "inline");
+           $(".portuguese").css("display", "none"); 
+        }else if (sel=='portuguese') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "none");
+           $(".portuguese").css("display", "inline"); 
+        
+        }
+        
+
+});
+
+function saveLanguage(cookieValue)
+{
+    var sel = document.getElementById('LanguageSelect');
+    setCookie('language', cookieValue, 365);
+}
+
+function setCookie(cookieName, cookieValue, nDays) {
+    var today = new Date();
+    var expire = new Date();
+
+    if (nDays==null || nDays==0)
+        nDays=1;
+
+    expire.setTime(today.getTime() + 3600000*24*nDays);
+    document.cookie = cookieName+"="+escape(cookieValue) + ";expires="+expire.toGMTString();
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+</script>
