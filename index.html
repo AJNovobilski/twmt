@@ -42,10 +42,9 @@
         
         <div class="language float-right align-middle">
          
-        <select id="select">
-             <option id="english" value="english">English</option>
-            <option id="spanish" value="spanish">Spanish</option>
-            <option id="portuguese" value="portuguese">Portuguese</option>
+          <select onchange="val()" id='select_id'>
+            <option selected>English</option>
+            <option>Spanish</option>
         </select>
         </div>
   </div>
@@ -54,7 +53,17 @@
   </div>
 
   </nav>
-  <!-- End Nav -->
+
+  
+
+
+<script>
+  function val() {
+      d = document.getElementById("select_id").value;
+      console.log(d);
+      localStorage.setItem('language', d);
+  }
+  </script>
 
 
 
@@ -64,7 +73,7 @@
     
     <div class="navigation ">
 
-
+<!-- Breadcrumbs -->
       
       <ul class=" border-4 border-light-blue-500 border-opacity-100 sticky top-0 bg-white">
         <li><a href="#">Home</a></li>
@@ -72,6 +81,8 @@
         <li><a href="#">Summer 15</a></li>
         <li>Italy</li>
       </ul>
+
+<!-- Breadcrumbs -->
 
     <div class="container mx-auto">
 
@@ -124,6 +135,13 @@
 </html>
 
 <script>
+
+var languageSelect = document.getElementById('LanguageSelect');
+console.log(languageSelect)
+
+</script>
+
+<!-- <script>
 
 var languageSelect = document.getElementById('LanguageSelect');
    var selectedLanguage = readCookie('language');
@@ -197,4 +215,4 @@ function readCookie(name) {
   }
   return null;
 }
-</script>
+</script> -->
